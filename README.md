@@ -19,15 +19,15 @@ Include syntax highlighter
     
 highlight code
 
-    html = hl.highlight("for(var i=0;i<10;i++)alert(i);");
+    html = hl("for(var i=0;i<10;i++)alert(i);");
 
 use special tab replacing string (default is 4 spaces)
 
-    html = hl.highlight(code_string, "<span>  </span>");
+    html = hl(code_string, "<span>  </span>");
 
 convert code only between &lt;code&gt; blocks (leave everything else as is)
 
-    html = hl.highlight("<p>PHP:</p><code><?php echo 'Hello world!';?></code>", false, true);
+    html = hl("<p>PHP:</p><code><?php echo 'Hello world!';?></code>", false, true);
 
 Styles
 ------
