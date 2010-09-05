@@ -1,7 +1,7 @@
 highlight
 ==============
 
-**highlight** for node.js is based on [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) parser and is meant to highlight code syntax in languages that are not known beforehand (*highlight* detects the used language automatically). This is especially important for pages in Markdown format - there's no easy way to know which language is actually used.
+**highlight** for node.js is based on [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) parser and is meant to highlight code syntax in languages that are not known beforehand (*highlight.js* detects the used language automatically). This is especially important for pages in Markdown format - there's no easy way to know which language is actually used.
 
 Installation
 ------------
