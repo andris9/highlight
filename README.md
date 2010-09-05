@@ -25,7 +25,7 @@ use special tab replacing string (default is 4 spaces)
 
     html = hl(code_string, "<span>  </span>");
 
-convert code only between &lt;code&gt; blocks (leave everything else as is)
+convert code only between &lt;code&gt; blocks (leaves everything else as is)
 
     html = hl("<p>PHP:</p><code><?php echo 'Hello world!';?></code>", false, true);
 
