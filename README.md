@@ -25,7 +25,7 @@ use special tab replacing string (default is 4 spaces)
 
     html = hl(code_string, "<span>  </span>");
 
-convert code only between &lt;code&gt; blocks (leaves everything else as is)
+convert code only between &lt;code&gt; blocks (leaves everything else as is) - especially useful if used together with converted [Markdown](/andris9/node-markdown) syntax that includes &lt;code&gt; blocks.
 
     html = hl("<p>PHP:</p><code><?php echo 'Hello world!';?></code>", false, true);
 
