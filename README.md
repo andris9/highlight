@@ -34,4 +34,4 @@ Styles
 
 **highlight** outputs HTML code with predefined CSS class names for different elements. This doesn't make a lot of sense by default (it's just a bunch of SPAN's) so you need to use a CSS file that sets the used color set for the highlighting. There's some sample CSS files in /lib/vendor/highlight.js/styles that can be used with no modification - just include one of the files in the page you are showing the highlighted code.
 
-    <link rel="stylesheet" href="/path/to/styles/acetic.css"/>
+    <link rel="stylesheet" href="/path/to/styles/default.css"/>
