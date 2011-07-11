@@ -5,12 +5,8 @@ Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net>
 */
 
 pre code {
-  font: 1em / 1.3em 'Lucida Console', 'courier new', monospace;
-  color: #f8f8f8;
-}
-
-pre {
-  background: #000;
+  display: block; padding: 0.5em;
+  background: #000; color: #f8f8f8;
 }
 
 pre .comment,
@@ -33,7 +29,7 @@ pre .list .title {
 }
 
 pre .string,
-pre .attribute .value,
+pre .tag .value,
 pre .cdata,
 pre .filter .argument,
 pre .attr_selector,
@@ -58,11 +54,13 @@ pre .tag,
 pre .tag .keyword,
 pre .decorator,
 pre .ini .title,
-pre .shebang {
+pre .shebang,
+pre .input_number {
   color: #89BDFF;
 }
 
 pre .class .title,
+pre .haskell .label,
 pre .smalltalk .class,
 pre .javadoctag,
 pre .yardoctag,
@@ -83,7 +81,8 @@ pre .variable {
   color: #3E87E3;
 }
 
-pre .css .keyword,
+pre .css .tag,
+pre .rules .property,
 pre .pseudo,
 pre .tex .special {
   color: #CDA869;

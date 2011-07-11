@@ -5,17 +5,8 @@ based on dark.css by Ivan Sagalaev
 
 */
 
-pre code[class]:after {
-  content: 'highlight: ' attr(class);
-  display: block; text-align: right;
-  font-size: smaller;
-  color: #CCC; background: white;
-  border-top: solid 1px black;
-  padding-top: 0.5em;
-}
-
 pre code {
-  display: block;
+  display: block; padding: 0.5em;
   background: #3F3F3F;
   color: #DCDCDC;
 }
@@ -65,13 +56,15 @@ pre .ruby .subst {
 pre .dos .keyword,
 pre .python .decorator,
 pre .class .title,
+pre .haskell .label,
 pre .function .title,
 pre .ini .title,
 pre .diff .header,
 pre .ruby .class .parent,
 pre .apache .tag,
 pre .nginx .built_in,
-pre .tex .command {
+pre .tex .command,
+pre .input_number {
     color: #efef8f;
 }
 
@@ -87,7 +80,7 @@ pre .ruby .instancevar {
 
 pre .diff .deletion,
 pre .string,
-pre .tag .attribute .value,
+pre .tag .value,
 pre .preprocessor,
 pre .built_in,
 pre .sql .aggregate,
@@ -113,8 +106,9 @@ pre .doctype {
   color: #7F9F7F;
 }
 
-pre .html .css,
-pre .html .javascript,
+pre .xml .css,
+pre .xml .javascript,
+pre .xml .vbscript,
 pre .tex .formula {
   opacity: 0.5;
 }

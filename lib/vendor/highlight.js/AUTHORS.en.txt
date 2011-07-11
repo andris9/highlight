@@ -35,3 +35,11 @@ Contributors:
 - Vladimir Moskva <vladmos@gmail.com>
 - Loren Segal <lsegal@soen.ca>
 - Andrew Fedorov <dmmdrs@mail.ru>
+- Igor Kalnitsky <igor.kalnitsky@gmail.com>
+- Jeremy Hull <sourdrums@gmail.com>
+- Valerii Hiora <valerii.hiora@gmail.com>
+- Nikolay Zakharov <nikolay.desh@gmail.com>
+- Dmitry Kovega <arhibot@gmail.com>
+- Sergey Ignatov <sergey@ignatov.spb.su>
+- Antono Vasiljev <self@antono.info>
+- Stephan Kountso <steplg@gmail.com>

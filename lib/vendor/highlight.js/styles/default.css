@@ -1,26 +1,17 @@
-﻿/*
+/*
 
 Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 
 */
 
-pre code[class]:after {
-  content: 'highlight: ' attr(class);
-  display: block; text-align: right;
-  font-size: smaller;
-  color: #CCC; background: white;
-  border-top: solid 1px;
-  padding-top: 0.5em;
-}
-
 pre code {
-  display: block;
+  display: block; padding: 0.5em;
   background: #F0F0F0;
 }
 
 pre code,
 pre .ruby .subst,
-pre .xml .title,
+pre .tag .title,
 pre .lisp .title {
   color: black;
 }
@@ -29,7 +20,7 @@ pre .string,
 pre .title,
 pre .constant,
 pre .parent,
-pre .tag .attribute .value,
+pre .tag .value,
 pre .rules .value,
 pre .rules .value .number,
 pre .preprocessor,
@@ -49,7 +40,8 @@ pre .bash .variable,
 pre .apache .tag,
 pre .apache .cbracket,
 pre .tex .command,
-pre .tex .special {
+pre .tex .special,
+pre .erlang_repl .function_or_atom {
   color: #800;
 }
 
@@ -67,6 +59,7 @@ pre .regexp,
 pre .literal,
 pre .smalltalk .symbol,
 pre .smalltalk .char,
+pre .go .constant,
 pre .change {
   color: #080;
 }
@@ -79,6 +72,7 @@ pre .filter .argument,
 pre .localvars,
 pre .array,
 pre .attr_selector,
+pre .important,
 pre .pseudo,
 pre .pi,
 pre .doctype,
@@ -87,10 +81,13 @@ pre .envvar,
 pre .shebang,
 pre .apache .sqbracket,
 pre .nginx .built_in,
-pre .tex .formula {
-  color: #88F;
+pre .tex .formula,
+pre .erlang_repl .reserved,
+pre .input_number {
+  color: #88F
 }
 
+pre .css .tag,
 pre .javadoctag,
 pre .phpdoc,
 pre .yardoctag {
@@ -107,6 +104,7 @@ pre .smalltalk .class,
 pre .winutils,
 pre .bash .variable,
 pre .apache .tag,
+pre .go .typename,
 pre .tex .command {
   font-weight: bold;
 }
@@ -115,9 +113,9 @@ pre .nginx .built_in {
   font-weight: normal;
 }
 
-pre .html .css,
-pre .html .javascript,
-pre .html .vbscript,
+pre .xml .css,
+pre .xml .javascript,
+pre .xml .vbscript,
 pre .tex .formula {
   opacity: 0.5;
 }

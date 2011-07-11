@@ -3,11 +3,8 @@
 */
 
 pre code {
-  color: #f8f8f8;
-}
-
-pre {
-  background: #000;
+  display: block; padding: 0.5em;
+  background: #000; color: #f8f8f8;
 }
 
 pre .shebang,
@@ -32,7 +29,7 @@ pre .list .title {
 }
 
 pre .string,
-pre .attribute .value,
+pre .tag .value,
 pre .cdata,
 pre .filter .argument,
 pre .attr_selector,
@@ -59,6 +56,7 @@ pre .tex .special {
 }
 
 pre .class .title,
+pre .haskell .label,
 pre .constant,
 pre .smalltalk .class,
 pre .javadoctag,
@@ -79,11 +77,11 @@ pre .literal {
   color: #C6C5FE;
 }
 
-pre .css .keyword {
+pre .css .tag {
   color: #96CBFE;
 }
 
-pre .css .rule .keyword,
+pre .css .rules .property,
 pre .css .id {
   color: #FFFFB6;
 }

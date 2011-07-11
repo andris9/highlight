@@ -4,17 +4,8 @@ FAR Style (c) MajestiC <majestic2k@gmail.com>
 
 */
 
-pre code[class]:after {
-  content: 'highlight: ' attr(class);
-  display: block; text-align: right;
-  font-size: smaller;
-  color: #CCC; background: white;
-  border-top: solid 1px;
-  padding-top: 0.5em;
-}
-
 pre code {
-  display: block;
+  display: block; padding: 0.5em;
   background: #000080;
 }
 
@@ -27,8 +18,9 @@ pre .string,
 pre .ruby .string,
 pre .function .title,
 pre .class .title,
+pre .haskell .label,
 pre .ini .title,
-pre .tag .attribute .value,
+pre .tag .value,
 pre .css .rules .value,
 pre .css .rules .value .number,
 pre .preprocessor,
@@ -52,6 +44,7 @@ pre .keyword,
 pre .css .id,
 pre .function .title,
 pre .class .title,
+pre .haskell .label,
 pre .ini .title,
 pre .vbscript .built_in,
 pre .sql .aggregate,
@@ -98,7 +91,8 @@ pre .xml .pi,
 pre .diff .header,
 pre .chunk,
 pre .shebang,
-pre .nginx .built_in {
+pre .nginx .built_in,
+pre .input_number {
   color: #008080;
 }
 
@@ -106,6 +100,7 @@ pre .keyword,
 pre .css .id,
 pre .function .title,
 pre .class .title,
+pre .haskell .label,
 pre .ini .title,
 pre .vbscript .built_in,
 pre .sql .aggregate,

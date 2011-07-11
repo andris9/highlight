@@ -5,13 +5,12 @@ Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiac
 */
 
 pre code {
-  display: block;
+  display: block; padding: 0.5em;
   background: white; color: black;
-  border: solid #CCC 1px;
 }
 
 pre .string,
-pre .attribute .value,
+pre .tag .value,
 pre .filter .argument,
 pre .addition,
 pre .change,
@@ -35,6 +34,7 @@ pre .apache .sqbracket {
 
 pre .keyword,
 pre .tag .title,
+pre .css .tag,
 pre .ini .title,
 pre .winutils,
 pre .flow,

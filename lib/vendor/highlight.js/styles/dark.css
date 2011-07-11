@@ -4,17 +4,8 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
 
 */
 
-pre code[class]:after {
-  content: 'highlight: ' attr(class);
-  display: block; text-align: right;
-  font-size: smaller;
-  color: #CCC; background: white;
-  border-top: solid 1px black;
-  padding-top: 0.5em;
-}
-
 pre code {
-  display: block;
+  display: block; padding: 0.5em;
   background: #444;
 }
 
@@ -36,8 +27,9 @@ pre .ruby .subst {
 pre .string,
 pre .function .title,
 pre .class .title,
+pre .haskell .label,
 pre .ini .title,
-pre .tag .attribute .value,
+pre .tag .value,
 pre .css .rules .value,
 pre .preprocessor,
 pre .ruby .symbol,
@@ -63,7 +55,8 @@ pre .stream,
 pre .envvar,
 pre .apache .tag,
 pre .apache .cbracket,
-pre .tex .command {
+pre .tex .command,
+pre .input_number {
   color: #D88;
 }
 
@@ -86,6 +79,7 @@ pre .css .id,
 pre .phpdoc,
 pre .function .title,
 pre .class .title,
+pre .haskell .label,
 pre .vbscript .built_in,
 pre .sql .aggregate,
 pre .rsl .built_in,
@@ -101,9 +95,9 @@ pre .tex .special {
   font-weight: bold;
 }
 
-pre .html .css,
-pre .html .javascript,
-pre .html .vbscript,
+pre .xml .css,
+pre .xml .javascript,
+pre .xml .vbscript,
 pre .tex .formula {
   opacity: 0.5;
 }
