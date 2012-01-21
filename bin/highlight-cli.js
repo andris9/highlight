@@ -3,8 +3,8 @@
   "use strict";
 
   var fs = require('fs')
-    //, Highlight = require('highlight')
-    , Highlight = require('../lib/highlight')
+    , Highlight = require('highlight')
+    //, Highlight = require('../lib/highlight')
     , filename = process.argv[2]
     , langArgIndex = 4
     , langArg
