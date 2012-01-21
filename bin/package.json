@@ -1,7 +1,7 @@
 {
     "name" : "highlight-cli",
     "description" : "cli for the highlight module",
-    "version" : "1.0.0",
+    "version" : "1.1.0",
     "author" : "AJ ONeal",
     "homepage": "https://github.com/andris9/highlight",
     "maintainers":[
