@@ -12,8 +12,9 @@
     ;
 
   if (filename.match(/--languages(=)?/)) {
-    langarg = filename;
+    langArg = filename;
     langArgIndex = 3;
+    filename = null;
   }
 
   langArg = process.argv[langArgIndex - 1];
@@ -68,7 +69,7 @@
       fs.readFile(filename, 'utf8', function (err, text) {
         if (err) {
           console.error("[ERROR] couldn't read from '" + filename + "':");
-          console.error(e.message);
+          console.error(err.message);
           return;
         }
 
