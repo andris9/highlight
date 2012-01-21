@@ -17,7 +17,7 @@
     filename = null;
   }
 
-  langArg = process.argv[langArgIndex - 1];
+  langArg = process.argv[langArgIndex - 1] || '';
 
   if (langArg = langArg.match(/--languages(=(.*))?/)) {
     langs = (process.argv[langArgIndex]||'').split(/\s*,\s*/g);
