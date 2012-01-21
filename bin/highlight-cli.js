@@ -48,7 +48,7 @@
     // TODO test if filename extension reveals code type
     Highlight.init(function (err) {
       if (err) {
-        console.error(err.message);
+        console.error('[highlight-cli]', err.message);
         //console.error(err.stack);
         return;
       }
@@ -78,7 +78,7 @@
     }
 
     function readStdin() {
-      var text
+      var text = ''
         , timeoutToken
         , stdin = process.stdin
         ;
