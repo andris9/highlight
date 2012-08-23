@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/andris9/highlight.png)](http://travis-ci.org/andris9/highlight)
 highlight
 ==============
 
